@@ -1,0 +1,75 @@
+% ===========================================================================
+% Beamer presentation template
+% Build with:  ./build.sh   (or: latexmk -pdf presentation.tex)
+% Output:      presentation.pdf
+% ===========================================================================
+\documentclass[aspectratio=169]{beamer}
+
+% ---- Theme -----------------------------------------------------------------
+\usetheme{metropolis}      % Fallback below if metropolis is not installed.
+% If "metropolis" is unavailable, comment the line above and uncomment one of:
+% \usetheme{default}
+% \usetheme{Madrid}
+% \usetheme{Berlin}
+
+% ---- Packages --------------------------------------------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{hyperref}
+
+% ---- Metadata --------------------------------------------------------------
+\title{Presentation Title}
+\subtitle{Optional subtitle}
+\author{Author Name}
+\institute{Institute / Organisation}
+\date{\today}
+
+% ===========================================================================
+\begin{document}
+
+\maketitle
+
+% ---- Optional agenda -------------------------------------------------------
+\begin{frame}{Overview}
+  \tableofcontents
+\end{frame}
+
+% ---------------------------------------------------------------------------
+\section{First Section}
+
+\begin{frame}{First slide}
+  \begin{itemize}
+    \item Point one
+    \item Point two
+    \item Point three
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{A slide with an image}
+  % \includegraphics[width=0.7\textwidth]{../../2_project/figure.png}
+  \centering
+  Replace this with your content.
+\end{frame}
+
+% ---------------------------------------------------------------------------
+\section{Second Section}
+
+\begin{frame}{Two columns}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      Left column content.
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      Right column content.
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% ---------------------------------------------------------------------------
+\begin{frame}[standout]
+  Thank you!
+\end{frame}
+
+\end{document}
